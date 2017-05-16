@@ -1,0 +1,9 @@
+<h2>Assignment 3</h2>
+<button class="btn btn-primary" (click)="onClick()">Display Details</button>
+<p *ngIf="displayDetails">Secret Password = 'tuna'</p>
+<p
+    *ngFor="let click of clicks; let i = index"
+    [ngStyle]="{'background-color': i >= 4 ? 'blue' : 'transparent'}"
+    [ngClass]="{'past-five': i >= 4}">
+    {{click}}
+</p>
